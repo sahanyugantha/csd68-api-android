@@ -2,8 +2,12 @@ package com.sahan.csd68appone;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,6 +18,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Log.i(TAG, "I'm at onCreate");
         setContentView(R.layout.activity_main);
+
+        Button btnOpenBmi = (Button) findViewById(R.id.btn_open_bmi);
+        btnOpenBmi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Opening HealthActivity.
+                Intent healthIntent = new Intent(getApplicationContext(), HealthActivity.class);
+                startActivity(healthIntent);
+
+                Toast.makeText(getApplicationContext(), "Opening BMI...", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+
+
     }
 
     @Override
