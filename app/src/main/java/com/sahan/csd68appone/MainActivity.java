@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button btnOpenBmi = (Button) findViewById(R.id.btn_open_bmi);
+        Button btnOpenHome = (Button) findViewById(R.id.btnOpenHome);
         btnOpenBmi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -28,10 +29,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(healthIntent);
 
                 Toast.makeText(getApplicationContext(), "Opening BMI...", Toast.LENGTH_SHORT).show();
-
             }
         });
 
+        btnOpenHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent homeIntent = new Intent(getApplicationContext(), HomeActivity.class);
+                startActivity(homeIntent);
+            }
+        });
 
 
     }
