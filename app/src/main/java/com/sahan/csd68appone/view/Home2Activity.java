@@ -1,4 +1,4 @@
-package com.sahan.csd68appone;
+package com.sahan.csd68appone.view;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,6 +8,8 @@ import android.os.Bundle;
 
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
+import com.sahan.csd68appone.PagerAdapter2;
+import com.sahan.csd68appone.R;
 
 public class Home2Activity extends AppCompatActivity {
 

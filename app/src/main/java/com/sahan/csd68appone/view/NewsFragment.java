@@ -1,4 +1,4 @@
-package com.sahan.csd68appone;
+package com.sahan.csd68appone.view;
 
 import android.os.Bundle;
 
@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.sahan.csd68appone.R;
 
 
 public class NewsFragment extends Fragment {

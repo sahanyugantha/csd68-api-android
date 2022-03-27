@@ -6,6 +6,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
+import com.sahan.csd68appone.view.GamesFragment;
+import com.sahan.csd68appone.view.NewsFragment;
+import com.sahan.csd68appone.view.NotificationFragment;
+
 public class PagerAdapter extends FragmentStatePagerAdapter {
 
     public PagerAdapter(@NonNull FragmentManager fm) {

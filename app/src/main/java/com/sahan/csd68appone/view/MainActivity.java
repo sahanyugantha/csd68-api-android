@@ -1,4 +1,4 @@
-package com.sahan.csd68appone;
+package com.sahan.csd68appone.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.sahan.csd68appone.R;
 
 public class MainActivity extends AppCompatActivity {
 

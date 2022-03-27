@@ -5,6 +5,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
+import com.sahan.csd68appone.view.GamesFragment;
+import com.sahan.csd68appone.view.NewsFragment;
+import com.sahan.csd68appone.view.NotificationFragment;
+
 public class PagerAdapter2 extends FragmentStateAdapter {
 
     public PagerAdapter2(@NonNull FragmentActivity fragmentActivity) {
