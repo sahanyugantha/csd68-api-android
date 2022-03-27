@@ -6,9 +6,16 @@
     android:background="#FFFFFF"
     tools:context=".view.GamesFragment">
 
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
+        android:layout_marginTop="80dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
+
 
 </FrameLayout>

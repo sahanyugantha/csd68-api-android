@@ -8,7 +8,7 @@ import android.os.Bundle;
 
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
-import com.sahan.csd68appone.PagerAdapter2;
+import com.sahan.csd68appone.adapter.PagerAdapter2;
 import com.sahan.csd68appone.R;
 
 public class Home2Activity extends AppCompatActivity {

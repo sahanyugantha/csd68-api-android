@@ -1,4 +1,4 @@
-package com.sahan.csd68appone;
+package com.sahan.csd68appone.adapter;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;

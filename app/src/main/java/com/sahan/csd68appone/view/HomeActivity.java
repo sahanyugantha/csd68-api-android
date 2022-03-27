@@ -6,7 +6,7 @@ import androidx.viewpager.widget.ViewPager;
 import android.os.Bundle;
 
 import com.google.android.material.tabs.TabLayout;
-import com.sahan.csd68appone.PagerAdapter;
+import com.sahan.csd68appone.adapter.PagerAdapter;
 import com.sahan.csd68appone.R;
 
 public class HomeActivity extends AppCompatActivity {
