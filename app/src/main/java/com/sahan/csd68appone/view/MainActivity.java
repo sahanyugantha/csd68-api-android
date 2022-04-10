@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import com.sahan.csd68appone.R;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private static final String TAG = "myTag";
 
@@ -23,26 +23,29 @@ public class MainActivity extends AppCompatActivity {
 
         Button btnOpenBmi = (Button) findViewById(R.id.btn_open_bmi);
         Button btnOpenHome = (Button) findViewById(R.id.btnOpenHome);
-        btnOpenBmi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //Opening HealthActivity.
+        Button btnOpenLogin = (Button) findViewById(R.id.btnLoginActivity);
+        btnOpenBmi.setOnClickListener(this);
+        btnOpenHome.setOnClickListener(this);
+        btnOpenLogin.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.btnLoginActivity:
+                Intent loginIntent = new Intent(getApplicationContext(), LoginActivity.class);
+                startActivity(loginIntent);
+                break;
+            case R.id.btn_open_bmi:
                 Intent healthIntent = new Intent(getApplicationContext(), HealthActivity.class);
                 startActivity(healthIntent);
-
                 Toast.makeText(getApplicationContext(), "Opening BMI...", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        btnOpenHome.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+                break;
+            case R.id.btnOpenHome:
                 Intent homeIntent = new Intent(getApplicationContext(), HomeActivity.class);
                 startActivity(homeIntent);
-            }
-        });
-
-
+                break;
+        }
     }
 
     @Override

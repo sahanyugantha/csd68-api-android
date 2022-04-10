@@ -38,15 +38,15 @@ public class GamesFragment extends Fragment {
         recyclerView.addItemDecoration(divder);
 
         GamesDao gamesDao = new GamesDao();
-        List<Game> games = new ArrayList<>();
-        try {
-            GamesAsyncTask gamesAsyncTask = new GamesAsyncTask();
-            games = gamesAsyncTask.execute().get();
-        } catch (Exception e){
-            e.printStackTrace();
-        }
+//        List<Game> games = new ArrayList<>();
+//        try {
+//            GamesAsyncTask gamesAsyncTask = new GamesAsyncTask();
+//            games = gamesAsyncTask.execute().get();
+//        } catch (Exception e){
+//            e.printStackTrace();
+//        }
 
-        //List<Game> gameList = gamesDao.getFakeData();
+        List<Game> games = gamesDao.getFakeData();
         GamesRecyclerViewAdapter adapter = new GamesRecyclerViewAdapter(getContext(), games);
         recyclerView.setAdapter(adapter);
 
